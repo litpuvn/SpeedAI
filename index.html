@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Team - Computer Science and Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img class="logo-icon" src="assets/images/logo_speed_school.png" alt="J.B. Speed School of Engineering - University of Louisville">
+                <div class="logo-text">
+                    <h1>AI Team</h1>
+                    <p>Computer Science & Engineering</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-nav container" aria-label="Main navigation">
+        <a class="tab-btn active" href="#our-work" data-tab="our-work">Our Work</a>
+        <a class="tab-btn" href="#team-members" data-tab="team-members">Team Members</a>
+    </nav>
+
+    <main class="container">
+        <!-- Our Work Section -->
+        <section class="page-section" id="our-work" aria-labelledby="our-work-heading">
+            <!-- Recommendations -->
+            <div class="section-header">
+                <h2 class="section-title" id="our-work-heading">Recommendations</h2>
+                <p class="section-subtitle">Click on a recommendation to view full details</p>
+            </div>
+
+            <div class="recommendations-list" id="recommendations-list">
+                <!-- Populated from js/data/recommendations.js -->
+            </div>
+            <nav class="pagination" id="recommendations-pagination" aria-label="Recommendations pagination"></nav>
+
+<!--            &lt;!&ndash; Team's Work &ndash;&gt;-->
+<!--            <div class="section-header spaced">-->
+<!--                <h2 class="section-title">Team's Work</h2>-->
+<!--                <p class="section-subtitle">Click on a project card to view full details</p>-->
+<!--            </div>-->
+
+<!--            <div class="work-grid" id="work-grid">-->
+<!--                &lt;!&ndash; Populated from js/data/projects.js &ndash;&gt;-->
+<!--            </div>-->
+<!--            <nav class="pagination" id="projects-pagination" aria-label="Projects pagination"></nav>-->
+        </section>
+
+        <!-- Team Members Section -->
+        <section class="page-section" id="team-members" aria-labelledby="team-members-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="team-members-heading">Team Members</h2>
+                <p class="section-subtitle">Click on a member card to view full bio and details</p>
+            </div>
+
+            <div class="team-grid" id="team-grid">
+                <!-- Populated from js/data/team-members.js -->
+            </div>
+            <nav class="pagination" id="team-pagination" aria-label="Team members pagination"></nav>
+        </section>
+    </main>
+
+    <!-- Modal for Details -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-scroll" id="modal-scroll">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Computer Science & Engineering</h4>
+                    <p>J.B. Speed School of Engineering<br>University of Louisville<br>Louisville, KY 40292</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>P: 502-852-6304<br>F: 502-852-4713<br>speed@louisville.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="https://engineering.louisville.edu" target="_blank">Speed School of Engineering</a><br>
+                    <a href="https://louisville.edu" target="_blank">University of Louisville</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 University of Louisville. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Data (edit these files to update content) -->
+    <script src="js/data/recommendations.js"></script>
+    <script src="js/data/projects.js"></script>
+    <script src="js/data/team-members.js"></script>
+    <!-- App logic -->
+    <script src="js/main.js"></script>
+</body>
+</html>
