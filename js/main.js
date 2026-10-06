@@ -271,6 +271,8 @@
     function closeModal() {
         modalOverlay.classList.remove('active');
         document.body.style.overflow = '';
+        // Drop the content so the video iframe is removed and playback stops
+        modalScroll.innerHTML = '';
     }
 
     // Events
