@@ -38,8 +38,14 @@ no other changes needed when adding entries.
 object in the array, change `id`, `title`, and `content` (HTML).
 
 **Add/edit a project** — open `js/data/projects.js`, copy an object, change
-`id`, `title`, `image`, `shortDesc`, `fullContent` (HTML).
+`id`, `title`, `video`, `image`, `shortDesc`, `fullContent` (HTML).
 Put the image in `assets/images/projects/`.
+
+`video` is the YouTube link played in the popup (e.g.
+`https://www.youtube.com/watch?v=XXXXXXXXXXX`). Only the first section of
+`fullContent` — the `Project Overview` heading and its paragraph — is shown
+under the video; the rest of the sections are kept in the file but hidden.
+Leave `video` empty to fall back to the card image in the popup.
 
 **Add/edit a team member** — open `js/data/team-members.js`, copy an object,
 change `id`, `name`, `role`, `image`, `bio` (HTML).

@@ -661,6 +661,39 @@ header {
     font-size: 24px;
 }
 
+/* Modal video – projects */
+.modal-video-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 76px 24px 32px;
+    background: var(--uol-black);
+}
+
+.modal-video-header .modal-hero-title {
+    color: var(--uol-white);
+    font-size: 24px;
+}
+
+.modal-video {
+    background: var(--uol-black);
+}
+
+.modal-video-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.modal-video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
 /* Modal body */
 .modal-body {
     padding: 32px;
@@ -854,6 +887,14 @@ footer {
     }
 
     .modal-hero-title {
+        font-size: 20px;
+    }
+
+    .modal-video-header {
+        padding: 20px 64px 18px 20px;
+    }
+
+    .modal-video-header .modal-hero-title {
         font-size: 20px;
     }
 

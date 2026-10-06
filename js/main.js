@@ -204,6 +204,23 @@
     }
 
     // Modal
+    function youtubeId(url) {
+        if (!url) return '';
+        const id = url.trim().match(/(?:youtu\.be\/|[?&]v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
+        if (id) return id[1];
+        return /^[A-Za-z0-9_-]{11}$/.test(url.trim()) ? url.trim() : '';
+    }
+
+    // Only the first <h3> section (Project Overview) is shown under the video
+    function firstSection(html) {
+        if (!html) return '';
+        const start = html.search(/<h3[\s>]/i);
+        const section = start === -1 ? html : html.slice(start);
+        const next = section.toLowerCase().indexOf('<h3', 4);
+        const excerpt = (next === -1 ? section : section.slice(0, next)).trim();
+        return excerpt || html.trim();
+    }
+
     function openModal(type, id) {
         const isProject = type === 'project';
         const data = isProject
@@ -213,11 +230,24 @@
         if (!data) return;
 
         const label = data.title || data.name;
-        const content = data.fullContent || data.bio;
         const badge = isProject ? 'Project' : 'Team Member';
+        const videoId = isProject ? youtubeId(data.video) : '';
 
         let hero;
-        if (data.image && isProject) {
+        if (videoId) {
+            hero = `
+                <div class="modal-video-header">
+                    <span class="modal-badge">${badge}</span>
+                    <h2 class="modal-hero-title" id="modal-title">${label}</h2>
+                </div>
+                <div class="modal-video">
+                    <div class="modal-video-frame">
+                        <iframe src="https://www.youtube.com/embed/${videoId}" title="${label}"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>`;
+        } else if (data.image && isProject) {
             hero = `
                 <div class="modal-hero">
                     <img src="${data.image}" alt="${label}">
@@ -242,7 +272,11 @@
                 </div>`;
         }
 
-        modalScroll.innerHTML = hero + `<div class="modal-body">${content}</div>`;
+        const content = videoId
+            ? firstSection(data.fullContent)
+            : (data.fullContent || data.bio);
+
+        modalScroll.innerHTML = hero + (content ? `<div class="modal-body">${content}</div>` : '');
         modalScroll.scrollTop = 0;
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';

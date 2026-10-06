@@ -4,14 +4,17 @@
  * To add a new project, copy one block below and edit it:
  *   - id: unique, no spaces (e.g. 'proj-7')
  *   - title: shown on the card and modal header
+ *   - video: YouTube link played in the modal (leave empty to show the image instead)
  *   - image: path to the card image (put files in assets/images/projects/)
  *   - shortDesc: one-line summary on the card
- *   - fullContent: HTML for the modal body (the image is added automatically)
+ *   - fullContent: HTML — only the first section (Project Overview) is shown,
+ *     directly under the video
  */
 window.PROJECTS = [
     {
         id: 'proj-1',
         title: 'Autonomous Vehicle Perception System',
+        video: 'https://www.youtube.com/watch?v=HJAE5Pk8Nyw',
         image: 'assets/images/projects/proj-1.jpg',
         shortDesc: 'Real-time object detection and tracking for autonomous navigation',
         fullContent: `
@@ -35,6 +38,7 @@ window.PROJECTS = [
     {
         id: 'proj-2',
         title: 'AI-Powered Cybersecurity Threat Detection',
+        video: 'https://www.youtube.com/watch?v=9HOpanT0GRs',
         image: 'assets/images/projects/proj-2.jpg',
         shortDesc: 'Machine learning models for real-time network anomaly detection',
         fullContent: `
@@ -58,6 +62,7 @@ window.PROJECTS = [
     {
         id: 'proj-3',
         title: 'Smart Manufacturing Digital Twin Platform',
+        video: 'https://www.youtube.com/watch?v=BsMxgpiOGV4',
         image: 'assets/images/projects/proj-3.jpg',
         shortDesc: 'Real-time digital twin for predictive maintenance and optimization',
         fullContent: `
@@ -81,6 +86,7 @@ window.PROJECTS = [
     {
         id: 'proj-4',
         title: 'Quantum-Resistant Cryptography for IoT',
+        video: 'https://www.youtube.com/watch?v=j_8PLI_wCVU',
         image: 'assets/images/projects/proj-4.jpg',
         shortDesc: 'Lightweight post-quantum cryptographic primitives for constrained devices',
         fullContent: `
@@ -104,6 +110,7 @@ window.PROJECTS = [
     {
         id: 'proj-5',
         title: 'Accessible Computing Education Platform',
+        video: 'https://www.youtube.com/watch?v=zOjov-2OZ0E',
         image: 'assets/images/projects/proj-5.jpg',
         shortDesc: 'Inclusive learning platform for neurodiverse computer science students',
         fullContent: `
@@ -127,6 +134,7 @@ window.PROJECTS = [
     {
         id: 'proj-6',
         title: 'Federated Learning for Healthcare Analytics',
+        video: 'https://www.youtube.com/watch?v=i_LwzRVP7bg',
         image: 'assets/images/projects/proj-6.jpg',
         shortDesc: 'Privacy-preserving ML across hospital networks without data sharing',
         fullContent: `
@@ -150,6 +158,7 @@ window.PROJECTS = [
     {
         id: 'proj-7',
         title: 'Edge AI for Precision Agriculture',
+        video: 'https://www.youtube.com/watch?v=0eqkUqYmq5M',
         image: 'assets/images/projects/proj-7.jpg',
         shortDesc: 'Low-power ML models for on-device crop health monitoring',
         fullContent: `
@@ -173,6 +182,7 @@ window.PROJECTS = [
     {
         id: 'proj-8',
         title: 'NLP for Legal Document Analysis',
+        video: 'https://www.youtube.com/watch?v=zjkBMFhNj_g',
         image: 'assets/images/projects/proj-8.jpg',
         shortDesc: 'Large language model tools for contract review and discovery',
         fullContent: `
@@ -196,6 +206,7 @@ window.PROJECTS = [
     {
         id: 'proj-9',
         title: 'Digital Pathology Image Segmentation',
+        video: 'https://www.youtube.com/watch?v=nDPWywWRIRo',
         image: 'assets/images/projects/proj-9.jpg',
         shortDesc: 'AI-assisted tumor detection in whole-slide pathology images',
         fullContent: `
@@ -219,6 +230,7 @@ window.PROJECTS = [
     {
         id: 'proj-10',
         title: 'Blockchain Supply Chain Provenance',
+        video: 'https://www.youtube.com/watch?v=gyMwXuJrbJQ',
         image: 'assets/images/projects/proj-10.jpg',
         shortDesc: 'Tamper-evident tracking for pharmaceutical distribution',
         fullContent: `
@@ -242,6 +254,7 @@ window.PROJECTS = [
     {
         id: 'proj-11',
         title: 'Intelligent Tutoring System for STEM',
+        video: 'https://www.youtube.com/watch?v=t9gmyvf7JYo',
         image: 'assets/images/projects/proj-11.jpg',
         shortDesc: 'Adaptive feedback for introductory programming courses',
         fullContent: `
@@ -265,6 +278,7 @@ window.PROJECTS = [
     {
         id: 'proj-12',
         title: 'Disaster Response Drone Swarm Coordination',
+        video: 'https://www.youtube.com/watch?v=k-yDYgc8AmU',
         image: 'assets/images/projects/proj-12.jpg',
         shortDesc: 'Cooperative aerial robots for search and damage assessment',
         fullContent: `
