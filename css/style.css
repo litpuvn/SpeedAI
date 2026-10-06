@@ -52,9 +52,10 @@ header {
 }
 
 .logo-icon {
-    height: 56px;
+    height: 60px;
     width: auto;
     display: block;
+    flex-shrink: 0;
 }
 
 .logo-text h1 {
@@ -755,7 +756,8 @@ footer {
     }
 
     .logo-icon {
-        height: 44px;
+        height: auto;
+        width: 140px;
     }
 
     .logo-text h1 {
@@ -866,5 +868,19 @@ footer {
 
     .modal-body {
         padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-icon {
+        width: 110px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-text h1 {
+        font-size: 15px;
     }
 }
