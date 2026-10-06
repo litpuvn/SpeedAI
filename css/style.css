@@ -370,59 +370,57 @@ header {
     line-height: 1.5;
 }
 
-/* Team Members Cards */
-.team-grid {
+/* Team Members list */
+.team-list {
+    list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 14px 24px;
 }
 
-.member-card {
+.member-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 16px 18px;
     background: var(--uol-white);
     border: 1px solid var(--uol-gray-200);
     border-radius: 12px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-align: center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.member-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+.member-item:hover {
     border-color: var(--uol-red);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.member-card-image {
-    width: 100%;
-    height: 250px;
-    background: var(--uol-gray-200);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--uol-gray-600);
-    font-size: 14px;
-    overflow: hidden;
-}
-
-.member-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.member-card-content {
-    padding: 20px;
-}
-
-.member-card-name {
-    font-size: 18px;
+.member-name {
+    font-size: 17px;
     font-weight: 600;
     color: var(--uol-black);
-    margin-bottom: 4px;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.member-card-role {
+a.member-name::after {
+    content: '\2197';
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--uol-gray-600);
+    margin-left: 6px;
+    vertical-align: 2px;
+    transition: color 0.2s ease;
+}
+
+a.member-name:hover {
+    color: var(--uol-red);
+}
+
+a.member-name:hover::after {
+    color: var(--uol-red);
+}
+
+.member-role {
     font-size: 14px;
     color: var(--uol-red);
     font-weight: 500;
@@ -567,7 +565,7 @@ header {
     background: var(--uol-gray-800);
 }
 
-.modal-hero:not(.modal-hero--member) > img {
+.modal-hero > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -608,45 +606,6 @@ header {
     font-weight: 700;
     color: var(--uol-white);
     line-height: 1.25;
-}
-
-/* Modal hero – team members */
-.modal-hero--member {
-    height: auto;
-    background: linear-gradient(180deg, var(--uol-gray-100) 0%, var(--uol-white) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 32px 28px;
-    border-bottom: 1px solid var(--uol-gray-200);
-}
-
-.modal-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--uol-white);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-    margin-bottom: 18px;
-}
-
-.modal-hero--member .modal-badge {
-    background: rgba(199, 30, 58, 0.1);
-    color: var(--uol-red);
-}
-
-.modal-hero--member .modal-hero-title {
-    color: var(--uol-black);
-    font-size: 24px;
-}
-
-.modal-hero-role {
-    color: var(--uol-red);
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 6px;
 }
 
 /* Modal fallback header (no image) */
@@ -865,8 +824,11 @@ footer {
         padding: 22px 18px 26px 62px;
     }
 
-    .work-grid,
-    .team-grid {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-list {
         grid-template-columns: 1fr;
     }
 
@@ -878,7 +840,7 @@ footer {
         max-height: 94vh;
     }
 
-    .modal-hero:not(.modal-hero--member) {
+    .modal-hero {
         height: 200px;
     }
 
@@ -896,15 +858,6 @@ footer {
 
     .modal-video-header .modal-hero-title {
         font-size: 20px;
-    }
-
-    .modal-hero--member {
-        padding: 28px 20px 22px;
-    }
-
-    .modal-avatar {
-        width: 100px;
-        height: 100px;
     }
 
     .modal-body {

@@ -56,17 +56,15 @@
             </article>`;
     }
 
-    function memberCardHTML(member) {
+    function memberRowHTML(member) {
+        const name = member.link
+            ? `<a class="member-name" href="${member.link}" target="_blank" rel="noopener noreferrer">${member.name}</a>`
+            : `<span class="member-name">${member.name}</span>`;
         return `
-            <article class="member-card" data-id="${member.id}">
-                <div class="member-card-image">
-                    <img src="${member.image}" alt="${member.name}" loading="lazy">
-                </div>
-                <div class="member-card-content">
-                    <h3 class="member-card-name">${member.name}</h3>
-                    <p class="member-card-role">${member.role}</p>
-                </div>
-            </article>`;
+            <li class="member-item">
+                ${name}
+                <span class="member-role">${member.role}</span>
+            </li>`;
     }
 
     // Pagination
@@ -87,10 +85,10 @@
         },
         members: {
             data: teamMembers,
-            pageSize: 8,
+            pageSize: 100,
             container: teamGrid,
             pagination: document.getElementById('team-pagination'),
-            render: memberCardHTML
+            render: memberRowHTML
         }
     };
 
@@ -221,17 +219,14 @@
         return excerpt || html.trim();
     }
 
-    function openModal(type, id) {
-        const isProject = type === 'project';
-        const data = isProject
-            ? projects.find(p => p.id === id)
-            : teamMembers.find(m => m.id === id);
+    function openProjectModal(id) {
+        const data = projects.find(p => p.id === id);
 
         if (!data) return;
 
-        const label = data.title || data.name;
-        const badge = isProject ? 'Project' : 'Team Member';
-        const videoId = isProject ? youtubeId(data.video) : '';
+        const label = data.title;
+        const badge = 'Project';
+        const videoId = youtubeId(data.video);
 
         let hero;
         if (videoId) {
@@ -247,7 +242,7 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>`;
-        } else if (data.image && isProject) {
+        } else if (data.image) {
             hero = `
                 <div class="modal-hero">
                     <img src="${data.image}" alt="${label}">
@@ -255,14 +250,6 @@
                         <span class="modal-badge">${badge}</span>
                         <h2 class="modal-hero-title" id="modal-title">${label}</h2>
                     </div>
-                </div>`;
-        } else if (data.image) {
-            hero = `
-                <div class="modal-hero modal-hero--member">
-                    <img class="modal-avatar" src="${data.image}" alt="${label}">
-                    <span class="modal-badge">${badge}</span>
-                    <h2 class="modal-hero-title" id="modal-title">${label}</h2>
-                    <p class="modal-hero-role">${data.role || ''}</p>
                 </div>`;
         } else {
             hero = `
@@ -272,9 +259,7 @@
                 </div>`;
         }
 
-        const content = videoId
-            ? firstSection(data.fullContent)
-            : (data.fullContent || data.bio);
+        const content = videoId ? firstSection(data.fullContent) : (data.fullContent || '');
 
         modalScroll.innerHTML = hero + (content ? `<div class="modal-body">${content}</div>` : '');
         modalScroll.scrollTop = 0;
@@ -319,12 +304,7 @@
 
         workGrid.addEventListener('click', (e) => {
             const card = e.target.closest('.work-card');
-            if (card) openModal('project', card.dataset.id);
-        });
-
-        teamGrid.addEventListener('click', (e) => {
-            const card = e.target.closest('.member-card');
-            if (card) openModal('member', card.dataset.id);
+            if (card) openProjectModal(card.dataset.id);
         });
 
         Object.keys(SECTIONS).forEach(key => {

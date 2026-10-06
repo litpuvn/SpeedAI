@@ -12,10 +12,10 @@ js/
   data/
     recommendations.js  Recommendations list
     projects.js         Team's Work projects
-    team-members.js     Team member profiles
+    team-members.js     Committee member list
 assets/images/
   projects/             Project card images
-  members/              Member photos
+  members/              Member photos (unused by the current list layout)
 ```
 
 ## Pagination
@@ -27,7 +27,7 @@ Each section shows a subset per page — page size is set in `js/main.js`
 |------------------|-----------------------------|--------------|
 | Recommendations  | `js/data/recommendations.js`| 4            |
 | Team's Work      | `js/data/projects.js`       | 6            |
-| Team Members     | `js/data/team-members.js`   | 8            |
+| Team Members     | `js/data/team-members.js`   | all (max 100)|
 
 Pages appear automatically when there are more items than fit one page —
 no other changes needed when adding entries.
@@ -48,11 +48,12 @@ under the video; the rest of the sections are kept in the file but hidden.
 Leave `video` empty to fall back to the card image in the popup.
 
 **Add/edit a team member** — open `js/data/team-members.js`, copy an object,
-change `id`, `name`, `role`, `image`, `bio` (HTML).
-Put the photo in `assets/images/members/`.
+change `id`, `name`, `role`, and `link` (personal page opened in a new tab
+when the name is clicked). `image` and `bio` are kept in the file but are not
+rendered by the current list layout.
 
 **Change colors / layout** — edit the CSS variables at the top of
 `css/style.css`.
 
-Note: `id` values must be unique, no spaces. The modal image is inserted
-automatically — do not include `<img>` tags in `fullContent` / `bio`.
+Note: `id` values must be unique, no spaces. The project modal image/video is
+inserted automatically — do not include `<img>` tags in `fullContent`.

@@ -3,16 +3,17 @@
  *
  * To add a new member, copy one block below and edit it:
  *   - id: unique, no spaces (e.g. 'member-9')
- *   - name: shown on the card and modal header
+ *   - name: shown in the committee list
+ *   - link: personal page the name points to (opens in a new tab)
  *   - role: job title shown under the name
- *   - image: path to the photo (put files in assets/images/members/)
- *   - bio: HTML for the modal body (the photo is added automatically)
+ *   - image / bio: kept for reference, not shown in the current list layout
  */
 window.TEAM_MEMBERS = [
     {
         id: 'member-1',
         name: 'Dr. Mehmed Kantardzic',
         role: 'Professor & Department Chair',
+        link: 'https://example.com/?member=1',
         image: 'assets/images/members/member-1.jpg',
         bio: `
             <h3>Biography</h3>
@@ -39,6 +40,7 @@ window.TEAM_MEMBERS = [
         id: 'member-2',
         name: 'Dr. Adel Elmaghraby',
         role: 'Professor & Associate Chair for Research',
+        link: 'https://example.com/?member=2',
         image: 'assets/images/members/member-2.jpg',
         bio: `
             <h3>Biography</h3>
@@ -65,6 +67,7 @@ window.TEAM_MEMBERS = [
         id: 'member-3',
         name: 'Dr. Olfa Nasraoui',
         role: 'Professor & Endowed Chair of E-Commerce',
+        link: 'https://example.com/?member=3',
         image: 'assets/images/members/member-3.jpg',
         bio: `
             <h3>Biography</h3>
@@ -91,6 +94,7 @@ window.TEAM_MEMBERS = [
         id: 'member-4',
         name: 'Dr. Hichem Frigui',
         role: 'Professor',
+        link: 'https://example.com/?member=4',
         image: 'assets/images/members/member-4.jpg',
         bio: `
             <h3>Biography</h3>
@@ -117,6 +121,7 @@ window.TEAM_MEMBERS = [
         id: 'member-5',
         name: 'Dr. Xiaoyu Liu',
         role: 'Associate Professor',
+        link: 'https://example.com/?member=5',
         image: 'assets/images/members/member-5.jpg',
         bio: `
             <h3>Biography</h3>
@@ -143,6 +148,7 @@ window.TEAM_MEMBERS = [
         id: 'member-6',
         name: 'Dr. Mahmoud El-Gayyar',
         role: 'Assistant Professor',
+        link: 'https://example.com/?member=6',
         image: 'assets/images/members/member-1.jpg',
         bio: `
             <h3>Biography</h3>
@@ -169,6 +175,7 @@ window.TEAM_MEMBERS = [
         id: 'member-7',
         name: 'Dr. Dan Popa',
         role: 'Professor (Joint Appointment)',
+        link: 'https://example.com/?member=7',
         image: 'assets/images/members/member-2.jpg',
         bio: `
             <h3>Biography</h3>
@@ -195,6 +202,7 @@ window.TEAM_MEMBERS = [
         id: 'member-8',
         name: 'Ms. Sarah Johnson',
         role: 'Program Coordinator',
+        link: 'https://example.com/?member=8',
         image: 'assets/images/members/member-3.jpg',
         bio: `
             <h3>Biography</h3>
@@ -217,6 +225,7 @@ window.TEAM_MEMBERS = [
         id: 'member-9',
         name: 'Dr. Priya Sharma',
         role: 'Associate Professor',
+        link: 'https://example.com/?member=9',
         image: 'assets/images/members/member-6.jpg',
         bio: `
             <h3>Biography</h3>
@@ -243,6 +252,7 @@ window.TEAM_MEMBERS = [
         id: 'member-10',
         name: 'Dr. Carlos Mendez',
         role: 'Assistant Professor',
+        link: 'https://example.com/?member=10',
         image: 'assets/images/members/member-7.jpg',
         bio: `
             <h3>Biography</h3>
@@ -269,6 +279,7 @@ window.TEAM_MEMBERS = [
         id: 'member-11',
         name: 'Dr. Emily Carter',
         role: 'Assistant Professor',
+        link: 'https://example.com/?member=11',
         image: 'assets/images/members/member-8.jpg',
         bio: `
             <h3>Biography</h3>
@@ -295,6 +306,7 @@ window.TEAM_MEMBERS = [
         id: 'member-12',
         name: 'Dr. James O’Brien',
         role: 'Professor of Practice',
+        link: 'https://example.com/?member=12',
         image: 'assets/images/members/member-9.jpg',
         bio: `
             <h3>Biography</h3>
@@ -321,6 +333,7 @@ window.TEAM_MEMBERS = [
         id: 'member-13',
         name: 'Dr. Amina Yusuf',
         role: 'Research Assistant Professor',
+        link: 'https://example.com/?member=13',
         image: 'assets/images/members/member-10.jpg',
         bio: `
             <h3>Biography</h3>
@@ -347,6 +360,7 @@ window.TEAM_MEMBERS = [
         id: 'member-14',
         name: 'Mr. David Kim',
         role: 'Research Engineer & Lab Manager',
+        link: 'https://example.com/?member=14',
         image: 'assets/images/members/member-11.jpg',
         bio: `
             <h3>Biography</h3>
@@ -368,6 +382,7 @@ window.TEAM_MEMBERS = [
         id: 'member-15',
         name: 'Dr. Linh Nguyen',
         role: 'Assistant Professor',
+        link: 'https://example.com/?member=15',
         image: 'assets/images/members/member-12.jpg',
         bio: `
             <h3>Biography</h3>
@@ -394,6 +409,7 @@ window.TEAM_MEMBERS = [
         id: 'member-16',
         name: 'Dr. Robert Taylor',
         role: 'Senior Lecturer & Undergraduate Advisor',
+        link: 'https://example.com/?member=16',
         image: 'assets/images/members/member-13.jpg',
         bio: `
             <h3>Biography</h3>
