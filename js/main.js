@@ -64,6 +64,7 @@
             <li class="member-item">
                 ${name}
                 <span class="member-role">${member.role}</span>
+                <span class="member-role">${member.department}</span>
             </li>`;
     }
 
