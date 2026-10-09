@@ -14,42 +14,42 @@ window.TEAM_MEMBERS = [
         name: 'Long Nguyen, Ph.D.',
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/l.nguyen',
-        department: 'Computer Science and Engineering'
+        department: 'Department of Computer Science and Engineering'
     },
     {
         id: 'member-2',
         name: 'Campbell Bego, Ph.D. ',
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/campbell.bego',
-        department: 'Engineering Fundamentals'
+        department: 'Department of Engineering Fundamentals'
     },
     {
         id: 'member-3',
         name: 'Erin Gerber, Ph.D' ,
         role: 'Associate Professor & Associate Dean',
         link: 'https://profiles.louisville.edu/e.gerber',
-        department: 'Industrial Engineering'
+        department: 'Department of Industrial Engineering'
     },
      {
         id: 'member-4',
         name: 'Hermann Frieboes, Ph.D' ,
         role: 'Professor',
         link: 'https://profiles.louisville.edu/hermann.frieboes',
-        department: 'Bio-Engineering'
+        department: 'Department of Bio-Engineering'
     },
     {
         id: 'member-5',
         name: 'Yueshuai He, Ph.D' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/yueshuai.he',
-        department: 'Civil & Environmental Engineering'
+        department: 'Department of Civil & Environmental Engineering'
     },
      {
         id: 'member-6',
         name: 'Yehya Senousy, Ph.D' ,
         role: 'Associate Professor',
         link: 'https://profiles.louisville.edu/yehya.senousy',
-        department: 'Electrical & Computer Engineering'
+        department: 'Department of Electrical & Computer Engineering'
     },
     {
         id: 'member-7',
@@ -63,14 +63,14 @@ window.TEAM_MEMBERS = [
         name: 'Vance Jaeger, Ph.D.' ,
         role: 'Associate Professor',
         link: 'https://profiles.louisville.edu/vance.jaeger',
-        department: 'Chemical Engineering'
+        department: 'Department of Chemical Engineering'
     },
     {
         id: 'member-9',
         name: 'Arinan Dourad, Ph.D.' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/arinan.dourado',
-        department: 'Mechanical Engineering'
+        department: 'Department of Mechanical Engineering'
     },
      {
         id: 'member-10',
