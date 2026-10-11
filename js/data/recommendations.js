@@ -9,7 +9,7 @@
 window.RECOMMENDATIONS = [
     {
         id: 'rec-1',
-        title: 'Recommendation on AI Usage Statement in Syllabus',
+        title: 'Recommendation on AI usage statement in syllabus',
         content: `
             <h3>Overview</h3>
             <p>This recommendation proposes a comprehensive update to the undergraduate curriculum to integrate Artificial Intelligence and Machine Learning concepts across core courses, ensuring all graduates have foundational AI literacy.</p>
