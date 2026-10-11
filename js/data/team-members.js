@@ -25,28 +25,28 @@ window.TEAM_MEMBERS = [
     },
     {
         id: 'member-3',
-        name: 'Erin Gerber, Ph.D' ,
+        name: 'Erin Gerber, Ph.D.' ,
         role: 'Associate Professor & Associate Dean',
         link: 'https://profiles.louisville.edu/e.gerber',
         department: 'Department of Industrial Engineering'
     },
      {
         id: 'member-4',
-        name: 'Hermann Frieboes, Ph.D' ,
+        name: 'Hermann Frieboes, Ph.D.' ,
         role: 'Professor',
         link: 'https://profiles.louisville.edu/hermann.frieboes',
         department: 'Department of Bio-Engineering'
     },
     {
         id: 'member-5',
-        name: 'Yueshuai He, Ph.D' ,
+        name: 'Yueshuai He, Ph.D.' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/yueshuai.he',
         department: 'Department of Civil & Environmental Engineering'
     },
      {
         id: 'member-6',
-        name: 'Yehya Senousy, Ph.D' ,
+        name: 'Yehya Senousy, Ph.D.' ,
         role: 'Associate Professor',
         link: 'https://profiles.louisville.edu/yehya.senousy',
         department: 'Department of Electrical & Computer Engineering'
