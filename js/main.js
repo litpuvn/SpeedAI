@@ -5,7 +5,8 @@
  *   1. js/data/recommendations.js
  *   2. js/data/projects.js
  *   3. js/data/team-members.js
- *   4. js/main.js
+ *   4. js/data/charge.js
+ *   5. js/main.js
  */
 (function () {
     'use strict';
@@ -20,6 +21,7 @@
     const recommendationsList = document.getElementById('recommendations-list');
     const workGrid = document.getElementById('work-grid');
     const teamGrid = document.getElementById('team-grid');
+    const chargeSection = document.getElementById('charge');
     const modalOverlay = document.getElementById('modal-overlay');
     const modalScroll = document.getElementById('modal-scroll');
     const modalClose = document.getElementById('modal-close');
@@ -112,6 +114,39 @@
             .join('');
 
         cfg.pagination.innerHTML = paginationHTML(key, page, totalPages);
+    }
+
+    /**
+     * Standing Committee Charge: rendered once at page load from
+     * window.COMMITTEE_CHARGE (js/data/charge.js). Items with `lead` get a
+     * numbered point with lettered sub-items; items with `note` are shown as
+     * a muted call-out box.
+     */
+    function renderCharge() {
+        const data = window.COMMITTEE_CHARGE;
+        if (!data || !chargeSection) return;
+
+        const items = (data.items || []).map(item => {
+            if (item.note) {
+                return `<li class="charge-scope-note">${item.note}</li>`;
+            }
+            const subItems = (item.subItems || [])
+                .map(text => `<li>${text}</li>`)
+                .join('');
+            return `
+                <li>
+                    <p class="charge-lead">${item.lead || ''}</p>
+                    <ol class="charge-sublist">${subItems}</ol>
+                </li>`;
+        }).join('');
+
+        chargeSection.innerHTML = `
+            <div class="section-header">
+                <h2 class="section-title" id="charge-heading">${data.title || 'Standing Committee Charge'}</h2>
+            </div>
+            <div class="charge-card">
+                <ol class="charge-list">${items}</ol>
+            </div>`;
     }
 
     /**
@@ -326,6 +361,7 @@
 
     // Initialize
     function init() {
+        renderCharge();
         Object.keys(SECTIONS).forEach(renderSection);
         setupEventListeners();
     }

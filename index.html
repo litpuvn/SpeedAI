@@ -24,11 +24,17 @@
     </header>
 
     <nav class="tabs-nav container" aria-label="Main navigation">
-        <a class="tab-btn active" href="#our-work" data-tab="our-work">Outcomes</a>
+        <a class="tab-btn active" href="#charge" data-tab="charge">Committee Charge</a>
+        <a class="tab-btn" href="#our-work" data-tab="our-work">Outcomes</a>
         <a class="tab-btn" href="#team-members" data-tab="team-members">Committee Members</a>
     </nav>
 
     <main class="container">
+        <!-- Standing Committee Charge -->
+        <section class="page-section" id="charge" aria-labelledby="charge-heading">
+            <!-- Populated from js/data/charge.js -->
+        </section>
+
         <!-- Our Work Section -->
         <section class="page-section" id="our-work" aria-labelledby="our-work-heading">
             <!-- Recommendations -->
@@ -110,6 +116,7 @@
     <script src="js/data/recommendations.js"></script>
     <script src="js/data/projects.js"></script>
     <script src="js/data/team-members.js"></script>
+    <script src="js/data/charge.js"></script>
     <!-- App logic -->
     <script src="js/main.js"></script>
 </body>

@@ -161,6 +161,88 @@ header {
     color: var(--uol-gray-600);
 }
 
+/* Standing Committee Charge */
+.charge-card {
+    background: var(--uol-white);
+    border: 1px solid var(--uol-gray-200);
+    border-left: 4px solid var(--uol-red);
+    border-radius: 16px;
+    padding: 36px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.charge-list {
+    list-style: none;
+    counter-reset: charge;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.charge-list > li {
+    counter-increment: charge;
+    position: relative;
+    padding-left: 54px;
+}
+
+.charge-list > li::before {
+    content: counter(charge);
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--uol-red);
+    color: var(--uol-white);
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(199, 30, 58, 0.28);
+}
+
+.charge-lead {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--uol-black);
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.charge-sublist {
+    list-style: none;
+    counter-reset: charge-sub;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 26px;
+}
+
+.charge-sublist > li {
+    counter-increment: charge-sub;
+    position: relative;
+    font-size: 15.5px;
+    color: var(--uol-gray-800);
+    line-height: 1.7;
+}
+
+.charge-sublist > li::before {
+    content: counter(charge-sub, lower-alpha) '.';
+    position: absolute;
+    left: -26px;
+    color: var(--uol-red);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.charge-list > li.charge-scope-note {
+    font-size: 15.5px;
+    color: var(--uol-gray-800);
+    line-height: 1.7;
+}
+
 /* Recommendations Accordion */
 .recommendations-list {
     display: flex;
@@ -770,11 +852,11 @@ footer {
     }
 
     .page-section {
-        scroll-margin-top: 130px;
+        scroll-margin-top: 152px;
     }
 
     .section-header {
-        scroll-margin-top: 120px;
+        scroll-margin-top: 142px;
     }
 
     .page-btn {
@@ -797,6 +879,40 @@ footer {
 
     .section-title {
         font-size: 22px;
+    }
+
+    .charge-card {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .charge-list {
+        gap: 24px;
+    }
+
+    .charge-list > li {
+        padding-left: 44px;
+    }
+
+    .charge-list > li::before {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .charge-lead {
+        font-size: 16px;
+    }
+
+    .charge-sublist {
+        padding-left: 22px;
+        gap: 8px;
+    }
+
+    .charge-sublist > li::before {
+        left: -22px;
+        font-size: 14px;
     }
 
     .recommendation-header {

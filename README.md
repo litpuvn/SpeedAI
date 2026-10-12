@@ -13,6 +13,7 @@ js/
     recommendations.js  Recommendations list
     projects.js         Team's Work projects
     team-members.js     Committee member list
+    charge.js           Standing Committee Charge text
 assets/images/
   projects/             Project card images
   members/              Member photos (unused by the current list layout)
@@ -25,6 +26,7 @@ Each section shows a subset per page — page size is set in `js/main.js`
 
 | Section          | Data file                   | Items / page |
 |------------------|-----------------------------|--------------|
+| Committee Charge | `js/data/charge.js`         | all          |
 | Recommendations  | `js/data/recommendations.js`| 4            |
 | Team's Work      | `js/data/projects.js`       | 6            |
 | Team Members     | `js/data/team-members.js`   | all (max 100)|
@@ -51,6 +53,12 @@ Leave `video` empty to fall back to the card image in the popup.
 change `id`, `name`, `role`, and `link` (personal page opened in a new tab
 when the name is clicked). `image` and `bio` are kept in the file but are not
 rendered by the current list layout.
+
+**Edit the Standing Committee Charge** — open `js/data/charge.js`. Each object
+in `items` is one numbered point: `lead` is the bold intro sentence and
+`subItems` is the array of lettered (a, b, c, …) sub-points. An object with
+only `note` is shown as a muted call-out box instead (used for the
+"outside the scope" statement).
 
 **Change colors / layout** — edit the CSS variables at the top of
 `css/style.css`.
