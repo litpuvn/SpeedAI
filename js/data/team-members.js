@@ -28,52 +28,59 @@ window.TEAM_MEMBERS = [
         name: 'Erin Gerber, Ph.D.' ,
         role: 'Associate Professor & Associate Dean',
         link: 'https://profiles.louisville.edu/e.gerber',
-        department: 'Department of Industrial Engineering'
+        department: 'Department of Industrial & Systems Engineering'
     },
      {
         id: 'member-4',
+        name: 'Jacob Read, Ph.D.' ,
+        role: 'Assistant Professor',
+        link: 'https://profiles.louisville.edu/jacob.read',
+        department: 'Department of Industrial & Systems Engineering'
+    },
+     {
+        id: 'member-5',
         name: 'Hermann Frieboes, Ph.D.' ,
         role: 'Professor',
         link: 'https://profiles.louisville.edu/hermann.frieboes',
         department: 'Department of Bio-Engineering'
     },
     {
-        id: 'member-5',
+        id: 'member-6',
         name: 'Yueshuai He, Ph.D.' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/yueshuai.he',
         department: 'Department of Civil & Environmental Engineering'
     },
      {
-        id: 'member-6',
+        id: 'member-7',
         name: 'Yehya Senousy, Ph.D.' ,
         role: 'Associate Professor',
         link: 'https://profiles.louisville.edu/yehya.senousy',
         department: 'Department of Electrical & Computer Engineering'
     },
     {
-        id: 'member-7',
+        id: 'member-8',
         name: 'Mani Vangalur' ,
         role: 'Director of Technology',
         link: 'https://profiles.louisville.edu/2646-manivannan-srinivasn-vangalur',
         department: 'Speed Information Technology'
     },
     {
-        id: 'member-8',
+        id: 'member-9',
         name: 'Vance Jaeger, Ph.D.' ,
         role: 'Associate Professor',
         link: 'https://profiles.louisville.edu/vance.jaeger',
         department: 'Department of Chemical Engineering'
     },
     {
-        id: 'member-9',
+        id: 'member-10',
         name: 'Arinan Dourad, Ph.D.' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/arinan.dourado',
         department: 'Department of Mechanical Engineering'
     },
      {
-        id: 'member-10',
+        id: 'member-11',
         name: 'Kristina Bloch, Ph.D.' ,
         role: 'Assistant Professor',
         link: 'https://profiles.louisville.edu/kristina.bloch',
