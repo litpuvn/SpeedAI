@@ -11,17 +11,22 @@ window.RECOMMENDATIONS = [
         id: 'rec-1',
         title: 'Recommendation on AI usage statement in syllabus',
         content: `
-            <h3>Overview</h3>
-            <p>This recommendation proposes a comprehensive update to the undergraduate curriculum to integrate Artificial Intelligence and Machine Learning concepts across core courses, ensuring all graduates have foundational AI literacy.</p>
-            <h3>Key Points</h3>
-            <ul>
-                <li>Integrate AI modules into CS 101, Data Structures, and Algorithms courses</li>
-                <li>Create new elective track: "AI Applications in Engineering"</li>
-                <li>Partner with industry for real-world project datasets</li>
-                <li>Faculty development workshops on AI pedagogy</li>
-            </ul>
-            <h3>Expected Impact</h3>
-            <p>Graduates will be better prepared for the evolving job market where AI skills are increasingly required across all engineering disciplines. This positions Speed School as a leader in AI-enabled engineering education.</p>
+            <h3>Option 1 Alternative:</h3>
+            <p>Using AI-tools to help you complete any assignment is not permitted in this course.</p>
+            
+            <h3>Option 2 Alternative (recommend including both sections):</h3>
+            <b>Policy for Use of AI tools<b>
+            <p>In this course, AI tools (including Generative AI) are permitted for use in ways that support learning. Specifically, students are permitted to ask AI tools conceptual questions about the course topics and review individual work after it is completed. Whenever AI tools are used, the tool and the way it was used should be cited transparently in any work that is submitted.
+AI tools are not permitted to be used in ways that reduce learning. Specifically, having an AI tool complete work that is supposed to be done individually is not permitted.
+Instruction on appropriate uses of AI tools is integrated into this course, and students should follow assignment instructions carefully to ensure they follow this policy. Approved use of AI tools may vary from assignment to assignment.
+            </p>
+
+<b>Academic Integrity:</b>
+<p>Students are encouraged to work together and learn from each other. However, cheating in any form will not be tolerated. Though you may seek help from peers and other resources on homework, you must complete and submit your own work. You should not share completed homework assignments with other students, and you should not copy directly from someone else (another student or online resources, including AI tools). If you are concerned about a deadline or doing well on an assignment, please speak with your instructor rather than considering academic misconduct.
+</p>
+
+            <h3>Option 3 Alternative:</h3>
+            <p>The use of AI tools (including Generative AI) will be allowed broadly throughout this course. However, students are required to declare or cite the use of AI tools in helping complete assignments and exams.</p>
         `
     },
     {
