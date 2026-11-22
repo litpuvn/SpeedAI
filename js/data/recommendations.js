@@ -33,18 +33,17 @@ Instruction on appropriate uses of AI tools is integrated into this course, and 
         id: 'rec-2',
         title: 'Recommendation on AI tools usage and data policy',
         content: `
-            <h3>Overview</h3>
             <p>In an effort to maintain and advance our technological competence, the Speed School AI in Education committee recommends that Deans and Department Chairs encourage faculty to explore and learn about AI through research, personal study, Delphi offerings, and other relevant opportunities to support teaching and learning. This encouragement could include allocated time in faculty’s annual workplan, funding for professional development, investment in appropriate tools, etc.</p>
             <br/>
             <p>The Speed School AI in Education committee recommends the following AI-related policies be adopted by the Speed School of Engineering:</p>
             <h3>FOR FACULTY/STAFF</h3>
-            <ul>
-                <li>While conducting any work with AI tools that includes student data<sup>1</sup>, employees may only use University-approved AI tools (or approved systems with embedded AI tools). While using university-approved AI tools with student data, faculty must use their UofL credentials.
+            <ol>
+                <li>While conducting any work with AI tools that includes student data<sup>a</sup>, employees may only use University-approved AI tools (or approved systems with embedded AI tools). While using university-approved AI tools with student data, faculty must use their UofL credentials.
 <br/>
-<sup>1</sup> Student data includes student names, ID numbers, certain demographic information, non-deidentified course work, grades, schedules, and enrollment information. These data are protected by both federal and state laws prohibiting exposure to non-university approved systems (FERPA, KRS 61.931–61.934, and KCDPA at KRS 367.3611–367.3629). A full listing of all sensitive data can be found within the University of Louisville Policy for Data Regulation and Management.</li>
+<sup>a</sup> <i>Student data includes student names, ID numbers, certain demographic information, non-deidentified course work, grades, schedules, and enrollment information. These data are protected by both federal and state laws prohibiting exposure to non-university approved systems (FERPA, KRS 61.931–61.934, and KCDPA at KRS 367.3611–367.3629). A full listing of all sensitive data can be found within the <a href="https://louisville.edu/about/departments/information-security-compliance/information-security-policies-standards/data-management">University of Louisville Policy for Data Regulation and Management</a>.</i></li>
                 <li>For all professional duties in which employees use AI tools without student data, it is recommended that employees use University-approved AI tools (or approved systems with embedded AI tools) with their official UofL credentials.</li>
-                <li>As with all cloud computing services, employees must follow existing IT policies when interacting with non-contracted AI tools.</li>
-            </ul>
+                <li>As with all cloud computing services, employees must follow existing IT policies (e.g. ISO-023 v2.2, the Cloud Computing and 3rd Party Vendor Services) when interacting with non-contracted AI tools.</li>
+            </ol>
         `
     }
 ];
