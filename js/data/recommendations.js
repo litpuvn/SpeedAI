@@ -37,7 +37,7 @@ Instruction on appropriate uses of AI tools is integrated into this course, and 
             <p>In an effort to maintain and advance our technological competence, the Speed School AI in Education committee recommends that Deans and Department Chairs encourage faculty to explore and learn about AI through research, personal study, Delphi offerings, and other relevant opportunities to support teaching and learning. This encouragement could include allocated time in faculty’s annual workplan, funding for professional development, investment in appropriate tools, etc.</p>
             <br/>
             <p>The Speed School AI in Education committee recommends the following AI-related policies be adopted by the Speed School of Engineering:</p>
-            <h3>Key Points</h3>
+            <h3>FOR FACULTY/STAFF</h3>
             <ul>
                 <li>While conducting any work with AI tools that includes student data<sup>1</sup>, employees may only use University-approved AI tools (or approved systems with embedded AI tools). While using university-approved AI tools with student data, faculty must use their UofL credentials.
 <br/>
