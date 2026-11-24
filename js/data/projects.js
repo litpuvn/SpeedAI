@@ -37,7 +37,7 @@ window.PROJECTS = [
     },
     {
         id: 'proj-2',
-        title: 'NotebookLM: Creating a Custom G-AI for your Class,
+        title: 'NotebookLM: Creating a Custom G-AI for your Class',
         video: 'https://louisville.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd2633d5-3e28-428e-b577-b4c700eca4f2',
         image: 'assets/images/projects/proj-2.jpg',
         shortDesc: 'NotebookLM: Creating a Custom G-AI for your Class',
