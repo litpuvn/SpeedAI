@@ -13,10 +13,10 @@
 window.PROJECTS = [
     {
         id: 'proj-1',
-        title: 'Autonomous Vehicle Perception System',
-        video: 'https://www.youtube.com/watch?v=HJAE5Pk8Nyw',
+        title: 'Designing AI-Resistant Assessments',
+        video: 'https://louisville.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78eb0e7c-db0a-41b7-8992-b4c700f3fff7',
         image: 'assets/images/projects/proj-1.jpg',
-        shortDesc: 'Real-time object detection and tracking for autonomous navigation',
+        shortDesc: 'Designing AI-Resistant Assessments',
         fullContent: `
             <h3>Project Overview</h3>
             <p>This project develops a comprehensive perception system for autonomous vehicles, combining LiDAR, radar, and camera data fusion for robust object detection and tracking in diverse weather conditions.</p>
@@ -37,10 +37,10 @@ window.PROJECTS = [
     },
     {
         id: 'proj-2',
-        title: 'AI-Powered Cybersecurity Threat Detection',
-        video: 'https://www.youtube.com/watch?v=9HOpanT0GRs',
+        title: 'NotebookLM: Creating a Custom G-AI for your Class,
+        video: 'https://louisville.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd2633d5-3e28-428e-b577-b4c700eca4f2',
         image: 'assets/images/projects/proj-2.jpg',
-        shortDesc: 'Machine learning models for real-time network anomaly detection',
+        shortDesc: 'NotebookLM: Creating a Custom G-AI for your Class',
         fullContent: `
             <h3>Project Overview</h3>
             <p>Development of novel machine learning algorithms for detecting zero-day attacks and advanced persistent threats in enterprise networks using unsupervised and semi-supervised learning techniques.</p>
